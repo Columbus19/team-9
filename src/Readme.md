@@ -1,1 +1,1 @@
-Source Code for all of our code
+Folder containing all of our source code
