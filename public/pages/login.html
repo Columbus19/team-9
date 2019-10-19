@@ -10,7 +10,7 @@
   <title>Apprisen Login</title>
 
   <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sign-in/">
-
+  <script src="https://kit.fontawesome.com/3777305fdd.js" crossorigin="anonymous"></script>
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -19,16 +19,40 @@
   <link href="stylesheets/signin.css" rel="stylesheet">
 </head>
 
-<body class="text-center">
-  <form class="form-signin" method="post">
-    <img class="mb-4" src="../images/logo.png" alt="" width="72" height="72">
-    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-    <label for="inputEmail" class="sr-only">Username</label>
-    <input name="username" id="inputEmail" class="form-control" placeholder="Username" required autofocus>
-    <label for="inputPassword" class="sr-only">Password</label>
-    <input name="password" type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-    <input class="btn btn-lg btn-primary btn-block" type="submit">
-  </form>
+<body>
+  <div class="container">
+    <div class="container text-center">
+      <form class="form-group form-signin" method="post">
+        <img class="mb-4" src="../images/logo.png" alt="" width="72" height="72">
+        <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+        <label for="inputEmail" class="sr-only">Username</label>
+        <input name="username" id="inputEmail" class="form-control" placeholder="Username" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input name="password" type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <input class="btn btn-lg btn-primary btn-block" type="submit">
+      </form>
+    </div>
+    <div class="container">
+      <footer class="footer">
+        <p class="text-center">
+          Connect with Apprisen on
+          <a href="https://twitter.com/Apprisen" class="">
+            <span style="font-size: 32px; color: Dodgerblue;">
+              <i class="fab fa-twitter"></i>
+            </span>
+          </a>and
+          <a href="https://www.facebook.com/Apprisen" class="">
+            <span style="font-size: 32px; color: Dodgerblue;">
+              <i class="fab fa-facebook"></i>
+            </span>
+          </a>. Made with
+          <span style="font-size: 32px; color: red;">
+            <i class="fas fa-heart"></i>
+          </span>by Team 9 at Code For Good 2019 - Columbus.
+        </p>
+      </footer>
+    </div>
+  </div>
 </body>
 
 </html>

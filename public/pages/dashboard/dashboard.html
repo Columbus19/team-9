@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/3777305fdd.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="./loading-bar.css">
   <script type="text/javascript" src="./loading-bar.js"></script>
   <script src="https://code.highcharts.com/highcharts.js"></script>
@@ -61,75 +62,82 @@
       <center>Hello Test!</center>
     </h1>
 
-      <div
-        data-preset="energy"
-        class="ldBar label-center"
-        data-transition-in = "100"
-        data-value="100"
-        style="width:50%;height:50%;margin:auto"
-      </div>
-    </div>
-  </div>
-</body>
-
-</html>
-</button>
-
-<div id="section2" class="container-fluid">
-  <h1>Section 2</h1>
-  <div <div id="container" style="width:100%; height:400px;"></div>
-  <script>
-    try {
-      const fs = require('fs');
-      const fileContents = fs.readFileSync('./databases/people-data.json', 'utf8');
-      const data = JSON.parse(fileContents);
-      console.log(debts);
-    } catch (err) {
-      console.log(err.message);
-    }
-    var debts = [{ name: 'Debt Sources', colorByPoint: true, data: [{ name: 'Chase Freedom Credit Card', y: 2500, sliced: true }, { name: 'Chase Sapphire Credit Card', y: 900 }, { name: 'Car Loan', y: 9000 }, { name: 'Student Loans', y: 15000 }] }];
-    Highcharts.chart('container', {
-      chart: {
-        plotBackgroundColor: null,
-        plotBorderWidth: null,
-        plotShadow: false,
-        type: 'pie'
-      },
-      title: {
-        text: "Your Debt Sources"
-      },
-      tooltip: {
-        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-      },
-      plotOptions: {
-        pie: {
-          allowPointSelect: true,
-          cursor: 'pointer',
-          dataLabels: {
-            enabled: false
-          },
-          showInLegend: true
+    <div data-preset="energy" class="ldBar label-center" data-transition-in="100" data-value="100"
+      style="width:50%;height:50%;margin:auto" </div> </div> </div> </body> </html> </button> <div id="section2"
+      class="container-fluid">
+      <h1>Section 2</h1>
+      <div <div id="container" style="width:100%; height:400px;"></div>
+      <script>
+        try {
+          const fs = require('fs');
+          const fileContents = fs.readFileSync('./databases/people-data.json', 'utf8');
+          const data = JSON.parse(fileContents);
+          console.log(debts);
+        } catch (err) {
+          console.log(err.message);
         }
-      },
-      series: debts
-    });
+        var debts = [{ name: 'Debt Sources', colorByPoint: true, data: [{ name: 'Chase Freedom Credit Card', y: 2500, sliced: true }, { name: 'Chase Sapphire Credit Card', y: 900 }, { name: 'Car Loan', y: 9000 }, { name: 'Student Loans', y: 15000 }] }];
+        Highcharts.chart('container', {
+          chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+          },
+          title: {
+            text: "Your Debt Sources"
+          },
+          tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+          },
+          plotOptions: {
+            pie: {
+              allowPointSelect: true,
+              cursor: 'pointer',
+              dataLabels: {
+                enabled: false
+              },
+              showInLegend: true
+            }
+          },
+          series: debts
+        });
 
-  </script>
-</div>
+      </script>
+    </div>
 
-</div>
-<div id="section3" class="container-fluid">
-  <h1>Section 3</h1>
-  <p>chart</p>
-</div>
-<div id="section41" class="container-fluid">
-  <h1>Section 4 Submenu 1</h1>
-  <p>link</p>
-</div>
-<div id="section42" class="container-fluid">
-  <h1>Section 4 Submenu 2</h1>
-  <p>link</p>
-</div>
+  </div>
+  <div id="section3" class="container-fluid">
+    <h1>Section 3</h1>
+    <p>chart</p>
+  </div>
+  <div id="section41" class="container-fluid">
+    <h1>Section 4 Submenu 1</h1>
+    <p>link</p>
+  </div>
+  <div id="section42" class="container-fluid">
+    <h1>Section 4 Submenu 2</h1>
+    <p>link</p>
+  </div>
+
+  <footer class="footer">
+    <p class="text-center">
+      Connect with Apprisen on
+      <a href="https://twitter.com/Apprisen" class="">
+        <span style="font-size: 32px; color: Dodgerblue;">
+          <i class="fab fa-twitter"></i>
+        </span>
+      </a>and
+      <a href="https://www.facebook.com/Apprisen" class="">
+        <span style="font-size: 32px; color: Dodgerblue;">
+          <i class="fab fa-facebook"></i>
+        </span>
+      </a>. Made with
+      <span style="font-size: 32px; color: red;">
+        <i class="fas fa-heart"></i>
+      </span>by Team 9 at Code For Good 2019 - Columbus.
+    </p>
+  </footer>
 
 </body>
 
