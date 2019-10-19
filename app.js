@@ -2,6 +2,7 @@ var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
+var bodyParser = require('body-parser'); // for html submit forms
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
@@ -16,13 +17,17 @@ app.set('view engine', 'pug');
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+// configure the app to use bodyParser()
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
+app.use(bodyParser.json());
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'src', 'components', 'pages')));
-
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(function (req, res, next) {
   console.log('Time:', Date.now())
   next()
-})
+});
 
 app.use('/', indexRouter);
 app.use('/login', loginRouter);
