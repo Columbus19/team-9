@@ -22,6 +22,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public', 'pages', 'dashboard')));
 app.use(function (req, res, next) {
   console.log('Time:', Date.now())
   next()
