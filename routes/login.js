@@ -18,7 +18,9 @@ router.post('/', function (req, res, next) {
     console.log('you\'re in!!');
     res.redirect('../dashboard');
   } else {
-    console.log('you\'re not in');
+    //s\sthrow "Invalid Username and Password";
+    res.redirect('../login');
+    //alert("Invalid username and password combo!");
   }
 });
 
