@@ -36,22 +36,25 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
-        </button> <a class="navbar-brand" href="/"><img class="mb-4 d-inline-block align-middle" src="../../images/logo2.png" alt=""
-                width="36" height="36"></a>
+        </button> <a class="navbar-brand" href="/"><img class="mb-4 d-inline-block align-middle"
+            src="../../images/logo2.png" alt="" width="36" height="36"></a>
       </div>
       <div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
             <li><a href="#section1">Progress</a></li>
-            <li><a href="#section2">Total</a></li>
-            <li><a href="#section3">Individual</a></li>
             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">External Resources<span
                   class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="http://content.moneyinstructor.com/232/5-steps-to-healthy-spending-habits.html">Healthy Spending Habits</a></li>
-                <li><a href="https://www.practicalmoneyskills.com/learn/budgeting/budgeting_basics">Budgeting Basics</a></li>
-                <li><a href="https://www.experian.com/blogs/ask-experian/credit-education/improving-credit/building-credit/">Building Credit</a></li>
-                <li><a href="https://bettermoneyhabits.bankofamerica.com/en/saving-budgeting/ways-to-save-money">Guide to Saving Money</a></li>
+                <li><a href="http://content.moneyinstructor.com/232/5-steps-to-healthy-spending-habits.html">Healthy
+                    Spending Habits</a></li>
+                <li><a href="https://www.practicalmoneyskills.com/learn/budgeting/budgeting_basics">Budgeting Basics</a>
+                </li>
+                <li><a
+                    href="https://www.experian.com/blogs/ask-experian/credit-education/improving-credit/building-credit/">Building
+                    Credit</a></li>
+                <li><a href="https://bettermoneyhabits.bankofamerica.com/en/saving-budgeting/ways-to-save-money">Guide
+                    to Saving Money</a></li>
               </ul>
             </li>
           </ul>
@@ -60,147 +63,138 @@
     </div>
   </nav>
 
-  <div id="section1" class="container-fluid">
-    <h1>
-      <center>Welcome, David Kerka!</center>
-    </h1>
-    
-    <div data-preset="energy" class="ldBar label-center" data-transition-in="100" data-value="100"
-      style="width:50%;height:50%;margin:auto" </div> </div> </div> </body> </html> </button> <div id="section2"
-      class="container-fluid">
-      <h1></h1>
-      <div <div id="container" style="width:100%; height:400px;"></div>
-      <script>
-        try {
-          const fs = require('fs');
-          const fileContents = fs.readFileSync('./databases/people-data.json', 'utf8');
-          const data = JSON.parse(fileContents);
-          console.log(debts);
-        } catch (err) {
-          console.log(err.message);
-        }
-        var debts = [{ name: 'Debt Sources', colorByPoint: true, data: [{ name: 'Chase Freedom Credit Card', y: 2500, sliced: true }, { name: 'Chase Sapphire Credit Card', y: 900 }, { name: 'Car Loan', y: 9000 }, { name: 'Student Loans', y: 15000 }] }];
-        Highcharts.chart('container', {
-          chart: {
-            plotBackgroundColor: null,
-            plotBorderWidth: null,
-            plotShadow: false,
-            type: 'pie'
-          },
-          title: {
-            text: "Your Debt Sources"
-          },
-          tooltip: {
-            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-          },
-          plotOptions: {
-            pie: {
-              allowPointSelect: true,
-              cursor: 'pointer',
-              dataLabels: {
-                enabled: false
-              },
-              showInLegend: true
-            }
-          },
-          series: debts
-        });
-      </script>
+  <div id="section1" class="container-fluid" style="height: 400px;">
+    <h1 class="text-center">Welcome, David Kerka!</h1>
+
+    <div data-preset="energy" class="ldBar label-center" data-transition-in="100" data-value="58"
+      style="width:50%;height:50%;margin:auto"></div>
+  </div>
+  <div class="container-fluid" id="section2">
+    <br>
+    <div class="row m">
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Next Appointment</h3>
+          </div>
+          <div class="panel-body">
+            Next appointment with your counselor is going to be October 25th, 2019 at 6pm via telephone.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Total Debt Remaining</h3>
+          </div>
+          <div class="panel-body">
+            Your total debt remaining is: $14,000
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Next Milestone</h3>
+          </div>
+          <div class="panel-body">
+            Your next milestone to be reached will be when you have paid off 75% of your debt.
+          </div>
+        </div>
       </div>
     </div>
-
-
-<div id="section2" class="container-fluid">
-  <h1></h1>
-  <div id="container" style="width:100%; height:400px;"></div>
-  <script>
-  try {
-    const fs = require('fs');
-    const fileContents = fs.readFileSync('./databases/people-data.json', 'utf8');
-    const data = JSON.parse(fileContents);
-    console.log(debts);
-  }catch(err){
-    console.log(err.message);
-  }
-  var debts = [{name: 'Brands', colorByPoint: true, data: [{name: 'Chase Freedom Credit Card', y: 2500, sliced: true}, {name: 'Chase Sapphire Credit Card', y: 900}, {name: 'Car Loan', y: 9000}, {name: 'Student Loans', y: 15000}]}];
-  Highcharts.chart('container', {
-    chart: {
-      plotBackgroundColor: null,
-      plotBorderWidth: null,
-      plotShadow: false,
-      type: 'pie'
-    },
-    title: {
-      text: "Your Debt Sources"
-    },
-    tooltip: {
-      pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-    },
-    plotOptions: {
-      pie: {
-        allowPointSelect: true,
-        cursor: 'pointer',
-        dataLabels: {
-          enabled: false
-        },
-        showInLegend: true
-      }
-    },
-    series: debts
-  });
-  </script>
   </div>
   <div id="section3" class="container-fluid">
+    <h1></h1>
+    <div id="container"></div>
+    <script>
+      try {
+        const fs = require('fs');
+        const fileContents = fs.readFileSync('./databases/people-data.json', 'utf8');
+        const data = JSON.parse(fileContents);
+        console.log(debts);
+      } catch (err) {
+        console.log(err.message);
+      }
+      var debts = [{ name: 'Brands', colorByPoint: true, data: [{ name: 'Chase Freedom Credit Card', y: 2500, sliced: true }, { name: 'Chase Sapphire Credit Card', y: 900 }, { name: 'Car Loan', y: 9000 }, { name: 'Student Loans', y: 15000 }] }];
+      Highcharts.chart('container', {
+        chart: {
+          plotBackgroundColor: null,
+          plotBorderWidth: null,
+          plotShadow: false,
+          type: 'pie'
+        },
+        title: {
+          text: "Your Debt Sources"
+        },
+        tooltip: {
+          pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+          pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+              enabled: false
+            },
+            showInLegend: true
+          }
+        },
+        series: debts
+      });
+    </script>
+  </div>
+  <div id="section4" class="container">
     <h1>Connect with us!</h1>
-    <p>
-      <form style="text-align: center">
-        Name:
-        <input type="text" name="nombre" id="nombre" style="margin: 0 auto">
-        <br />
-        <form style="text-align: center">
-          Email:
-          <input type="email" name="email" id="email" style="margin: 0 auto">
-          <br />
-          <form style="text-align: center">
-            Comment:
-            <textarea class="form-control" rows="5" id="comment" name="comment"></textarea>
-            <br />
-    </p>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
+    <form class="">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="First Last">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" name="email" id="email" placeholder="example@mail.com">
+      </div>
+      <div class="form-group">
+        <label for="comment"></label>
+        <textarea class="form-control" rows="3" id="comment" name="comment"
+          placeholder="Leave any thoughts here..."></textarea>
+      </div>
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
 
-    <script>
-      // Your web app's Firebase configuration
-      var config = {
-        apiKey: "AIzaSyABY8_3Oe5-R8lzDSgA1I9540mA5oBl_sE",
-        authDomain: "apprisen-fdea1.firebaseapp.com",
-        databaseURL: "https://apprisen-fdea1.firebaseio.com",
-        storageBucket: "apprisen-fdea1.appspot.com"
-      };
-      firebase.initializeApp(config);
-    </script>
-    <form style="text-align: center">
-      <input type="submit" id="submit" value="Submit" href="dashboard.html">
-    </form>
-    <script>
-      var nombre = document.getElementById("nombre");
-      var email = document.getElementById("email");
-      var comment = document.getElementById("comment");
-      var submit = document.getElementById("submit");
-      var database = firebase.database(); /*global firebase*/
-      var reference = database.ref();
-      submit.onclick = function () {
-        reference = database.ref("comments/");
-        reference.push({
-          name: nombre.value,
-          email: email.value,
-          comment: comment.value
-        });
-        nombre.value = "";
-        email.value = "";
-        comment.value = "";
-      };
-    </script>
+      <script>
+        // Your web app's Firebase configuration
+        var config = {
+          apiKey: "AIzaSyABY8_3Oe5-R8lzDSgA1I9540mA5oBl_sE",
+          authDomain: "apprisen-fdea1.firebaseapp.com",
+          databaseURL: "https://apprisen-fdea1.firebaseio.com",
+          storageBucket: "apprisen-fdea1.appspot.com"
+        };
+        firebase.initializeApp(config);
+      </script>
+      <form style="text-align: center">
+        <input class="btn btn-default" type="submit" id="submit" value="Submit" href="dashboard.html">
+      </form>
+      <script>
+        var nombre = document.getElementById("nombre");
+        var email = document.getElementById("email");
+        var comment = document.getElementById("comment");
+        var submit = document.getElementById("submit");
+        var database = firebase.database(); /*global firebase*/
+        var reference = database.ref();
+        submit.onclick = function () {
+          reference = database.ref("comments/");
+          reference.push({
+            name: nombre.value,
+            email: email.value,
+            comment: comment.value
+          });
+          nombre.value = "";
+          email.value = "";
+          comment.value = "";
+        };
+      </script>
   </div>
 
   <footer class="footer">
