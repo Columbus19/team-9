@@ -8,11 +8,11 @@ router.get('/', function (req, res, next) {
 });
 
 router.post('/', function (req, res, next) {
-  console.log('submitted');
+  console.log('submitted!');
   console.log(req.body);
-  console.log(req.params);
-  console.log(req.query);
-  res.send(req.body);
+  let username = req.body.username;
+  let password = req.body.password;
+  res.redirect('..');
 });
 
 module.exports = router;
