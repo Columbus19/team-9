@@ -21,12 +21,24 @@
         "debt-amt-paid" : 1400,
         "debt-src" : {
           "cc1" : {
-            "debt-amt" : 5000,
+            "name" : "Chase Freedom Credit Card",
+            "debt-amt" : 2500,
             "ir" : 15
           },
           "cc2" : {
-            "debt-amt" : 7000,
+            "name" : "Chase Sapphire Credit Card",
+            "debt-amt" : 900,
             "ir" : 20
+          }
+          "carloan" : {
+            "name" : "Car Loan",
+            "debt-amt" : 9000,
+            "ir"  : 5
+          },
+          "studentln" : {
+            "name" : "Student Loans",
+            "debt-amt" : 15000,
+            "ir" : 3
           }
         },
         "income" : 5000,
@@ -69,12 +81,14 @@
             "ir" : 16
           },
           "cc2" : {
+            "name" : "Credit Card 1"
             "debt-amt" : 9000,
             "ir" : 12
           }
         },
         "income" : 4500,
         "outflows" : {
+          "name" : "Credit Card 2"
           "monthly-spending" : 650,
           "sched-pmt-amt" : 800
         }
