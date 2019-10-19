@@ -9,7 +9,9 @@ let stringData = JSON.stringify(dataFile);
 console.log(stringData);
 var indexRouter = require('./routes/index');
 var loginRouter = require('./routes/login');
+var dashboardRouter = require('./routes/dashboard');
 
+// create express app
 var app = express();
 
 // view engine setup
@@ -19,11 +21,6 @@ app.set('view engine', 'pug');
 app.use(logger('dev'));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-// configure the app to use bodyParser()
-// app.use(bodyParser.urlencoded({
-//   extended: true
-// }));
-// app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(function (req, res, next) {
@@ -31,8 +28,28 @@ app.use(function (req, res, next) {
   next()
 });
 
+// routers
 app.use('/', indexRouter);
 app.use('/login', loginRouter);
+app.use('/dashboard', dashboardRouter);
+
+// routes for specific pages
+app.get('/learning', function (req, res, next) {
+  res.sendFile(path.join(__dirname, '../public/pages', 'learning.html'));
+});
+app.get('/services', function (req, res, next) {
+  res.sendFile(path.join(__dirname, '../public/pages', 'services.html'));
+});
+
+app.get('/about/faqs', function (req, res, next) {
+  res.sendFile(path.join(__dirname, '../public/pages', 'about/faqs.html'));
+});
+app.get('/about/contact', function (req, res, next) {
+  res.sendFile(path.join(__dirname, '../public/pages', 'about/contact.html'));
+});
+app.get('/about/testimonials', function (req, res, next) {
+  res.sendFile(path.join(__dirname, '../public/pages', 'about/testimonials.html'));
+});
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
