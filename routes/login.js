@@ -8,10 +8,14 @@ router.get('/', function (req, res, next) {
 });
 
 router.post('/', function (req, res, next) {
-  console.log('submitted!');
-  console.log(req.body);
+  const fs = require('fs');
+  const fileContents = fs.readFileSync('./databases/people-data.json', 'utf8');
+  const data = JSON.parse(fileContents);
+  console.log(data);
   let username = req.body.username;
   let password = req.body.password;
+  console.log('submitted!');
+  console.log(req.body);
   res.redirect('..');
 });
 
