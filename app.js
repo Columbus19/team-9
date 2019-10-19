@@ -4,12 +4,20 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser'); // for html submit forms
 var logger = require('morgan');
-let dataFile = require('./databases/people-data.json');
-let stringData = JSON.stringify(dataFile);
-console.log(stringData);
+//let dataFile = require('./databases/people-data.json');
+//let stringData = JSON.stringify(dataFile);
+const fs = require('fs');
+const fileContents = fs.readFileSync('./databases/people-data.json', 'utf8');
+const data = JSON.parse(fileContents);
+//console.log(data);
+//console.log(stringData);
 var indexRouter = require('./routes/index');
 var loginRouter = require('./routes/login');
+<<<<<<< HEAD
 var dashboardRouter = require('./routes/dashboard');
+=======
+var dashboardRouter = require('/public/dashboard/dashboard.html');
+>>>>>>> 994c401339d95ca396e193922cf2c979cb4f5dbf
 
 // create express app
 var app = express();
