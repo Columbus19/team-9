@@ -120,6 +120,68 @@
     <p>link</p>
   </div>
 
+  </div>
+  <div id="section3" class="container-fluid">
+    <h1>Connect with us!</h1>
+    <p>
+      <form style="text-align: center">
+        Name:
+        <input type="text" name="nombre" id="nombre" style="margin: 0 auto">
+        <br />
+        <form style="text-align: center">
+          Email:
+          <input type="email" name="email" id="email" style="margin: 0 auto">
+          <br />
+          <form style="text-align: center">
+            Comment:
+            <textarea class="form-control" rows="5" id="comment" name="comment"></textarea>
+            <br />
+    </p>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var config = {
+        apiKey: "AIzaSyABY8_3Oe5-R8lzDSgA1I9540mA5oBl_sE",
+        authDomain: "apprisen-fdea1.firebaseapp.com",
+        databaseURL: "https://apprisen-fdea1.firebaseio.com",
+        storageBucket: "apprisen-fdea1.appspot.com"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <form style="text-align: center">
+      <input type="submit" id="submit" value="submit" href="dashboard.html">
+    </form>
+    <script>
+      var nombre = document.getElementById("nombre");
+      var email = document.getElementById("email");
+      var comment = document.getElementById("comment");
+      var submit = document.getElementById("submit");
+      var database = firebase.database(); /*global firebase*/
+      var reference = database.ref();
+      submit.onclick = function () {
+        reference = database.ref("comments/");
+        reference.push({
+          name: nombre.value,
+          email: email.value,
+          comment: comment.value
+        });
+        nombre.value = "";
+        email.value = "";
+        comment.value = "";
+      };
+    </script>
+  </div>
+  <div id="section41" class="container-fluid">
+    <h1>Section 4 Submenu 1</h1>
+    <p>link</p>
+  </div>
+  <div id="section42" class="container-fluid">
+    <h1>Section 4 Submenu 2</h1>
+    <p>link</p>
+  </div>
+
   <footer class="footer">
     <p class="text-center">
       Connect with Apprisen on
