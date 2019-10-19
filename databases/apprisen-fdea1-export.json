@@ -1,0 +1,45 @@
+{
+  "dkerka" : {
+    "contact" : {
+      "address" : "1111 Polaris Pkwy Columbus, OH 12345",
+      "email" : "dkerka@gmail.com",
+      "phone" : "123-456-7890"
+    },
+    "counselor" : {
+      "email" : "johnjones@gmail.com",
+      "name" : "John Jones",
+      "phone" : "098-765-4321"
+    },
+    "demographic" : {
+      "age" : 20,
+      "gender" : "male",
+      "race" : "White"
+    },
+    "finances" : {
+      "debt-amt-paid" : 1400,
+      "debt-src" : {
+        "cc1" : {
+          "debt-amt" : 5000,
+          "ir" : 15
+        },
+        "cc2" : {
+          "debt-amt" : 7000,
+          "ir" : 20
+        }
+      },
+      "income" : 5000,
+      "outflows" : {
+        "monthly-spending" : 450,
+        "sched-pmt-amt" : 700
+      }
+    },
+    "name" : "David Kerka",
+    "password" : "badpassword",
+    "recovery" : {
+      "a1" : "green",
+      "a2" : "bears",
+      "q1" : "What is your favorite color?",
+      "q2" : "What is your high school mascot?"
+    }
+  }
+}
