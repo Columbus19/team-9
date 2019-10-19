@@ -35,7 +35,8 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
-          <<<<<<< HEAD </button> <a class="navbar-brand" href="#">Logo</a>
+        </button> <a class="navbar-brand" href="/"><img class="mb-4 d-inline-block align-middle" src="../../images/logo2.png" alt=""
+                width="36" height="36"></a>
       </div>
       <div>
         <div class="collapse navbar-collapse" id="myNavbar">
@@ -58,7 +59,7 @@
 
   <div id="section1" class="container-fluid">
     <h1>
-      <center>Hello Test!</center>
+      <center>Welcome, David Kerka!</center>
     </h1>
 
       <div
@@ -70,6 +71,7 @@
 
 
       </div>
+
     </div>
   </div>
 </body>
@@ -77,7 +79,7 @@
 </button>
 
 <div id="section2" class="container-fluid">
-  <h1>Section 2</h1>
+  <h1></h1>
   <div <div id="container" style="width:100%; height:400px;"></div>
   <script>
   try {
@@ -88,7 +90,7 @@
   }catch(err){
     console.log(err.message);
   }
-  var debts = [{name: 'Debt Sources', colorByPoint: true, data: [{name: 'Chase Freedom Credit Card', y: 2500, sliced: true}, {name: 'Chase Sapphire Credit Card', y: 900}, {name: 'Car Loan', y: 9000}, {name: 'Student Loans', y: 15000}]}];
+  var debts = [{name: 'Brands', colorByPoint: true, data: [{name: 'Chase Freedom Credit Card', y: 2500, sliced: true}, {name: 'Chase Sapphire Credit Card', y: 900}, {name: 'Car Loan', y: 9000}, {name: 'Student Loans', y: 15000}]}];
   Highcharts.chart('container', {
     chart: {
       plotBackgroundColor: null,
@@ -118,11 +120,68 @@
   </script>
 </div>
 
-</div>
+
+
 <div id="section3" class="container-fluid">
-  <h1>Section 3</h1>
-  <p>chart</p>
+  <h1>sec3</h1>
+  <div <div id="container" style="width:100%; height:400px;"></div>
+  <script>
+    Highcharts.chart('container', {
+      chart: {
+          type: 'timeline'
+      },
+      xAxis: {
+          visible: false
+      },
+      yAxis: {
+          visible: false
+      },
+      title: {
+          text: 'Timeline of Space Exploration'
+      },
+      subtitle: {
+          text: 'Info source: <a href="https://en.wikipedia.org/wiki/Timeline_of_space_exploration">www.wikipedia.org</a>'
+      },
+      colors: [
+          '#4185F3',
+          '#427CDD',
+          '#406AB2',
+          '#3E5A8E',
+          '#3B4A68',
+          '#363C46'
+      ],
+      series: [{
+          data: [{
+              name: 'First dogs',
+              label: '1951: First dogs in space',
+              description: '22 July 1951 First dogs in space (Dezik and Tsygan) '
+          }, {
+              name: 'Sputnik 1',
+              label: '1957: First artificial satellite',
+              description: '4 October 1957 First artificial satellite. First signals from space.'
+          }, {
+              name: 'First human spaceflight',
+              label: '1961: First human spaceflight (Yuri Gagarin)',
+              description: 'First human spaceflight (Yuri Gagarin), and the first human-crewed orbital flight'
+          }, {
+              name: 'First human on the Moon',
+              label: '1969: First human on the Moon',
+              description: 'First human on the Moon, and first space launch from a celestial body other than the Earth. First sample return from the Moon'
+          }, {
+              name: 'First space station',
+              label: '1971: First space station',
+              description: 'Salyut 1 was the first space station of any kind, launched into low Earth orbit by the Soviet Union on April 19, 1971.'
+          }, {
+              name: 'Apollo–Soyuz Test Project',
+              label: '1975: First multinational manned mission',
+              description: 'The mission included both joint and separate scientific experiments, and provided useful engineering experience for future joint US–Russian space flights, such as the Shuttle–Mir Program and the International Space Station.'
+          }]
+      }]
+  });
+  </script>
 </div>
+
+
 <div id="section41" class="container-fluid">
   <h1>Section 4 Submenu 1</h1>
   <p>link</p>
