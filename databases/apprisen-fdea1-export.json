@@ -41,5 +41,48 @@
       "q1" : "What is your favorite color?",
       "q2" : "What is your high school mascot?"
     }
+  },
+  "smathur" : {
+    "contact" : {
+      "address" : "1 Infinity Loop Cupertino, CA 54321",
+      "email" : "smathur@gmail.com",
+      "phone" : "408-123-4567"
+    },
+    "counselor" : {
+      "email" : "janeyjaneson@gmail.com",
+      "name" : "Janey Janeson",
+      "phone" : "739-396-2850"
+    },
+    "demographic" : {
+      "age" : 19,
+      "gender" : "male",
+      "race" : "Asian"
+    },
+    "finances" : {
+      "debt-amt-paid" : 1300,
+      "debt-src" : {
+        "cc1" : {
+          "debt-amt" : 2000,
+          "ir" : 16
+        },
+        "cc2" : {
+          "debt-amt" : 9000,
+          "ir" : 12
+        }
+      },
+      "income" : 4500,
+      "outflows" : {
+        "monthly-spending" : 650,
+        "sched-pmt-amt" : 800
+      }
+    },
+    "name" : "Siddharth Mathur",
+    "password" : "anotherbadpassword",
+    "recovery" : {
+      "a1" : "blue",
+      "a2" : "beets",
+      "q1" : "What is your favorite color?",
+      "q2" : "What is your favorite vegetable?"
+    }
   }
 }
