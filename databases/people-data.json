@@ -1,6 +1,7 @@
 {
-  "clients" : {
-    "dkerka" : {
+  "clients" : [
+    {
+      "username" : "dkerka",
       "contact" : {
         "address" : "1111 Polaris Pkwy Columbus, OH 12345",
         "email" : "dkerka@gmail.com",
@@ -43,7 +44,8 @@
         "q2" : "What is your high school mascot?"
       }
     },
-    "smathur" : {
+    {
+      "username" : "smathur",
       "contact" : {
         "address" : "1 Infinity Loop Cupertino, CA 54321",
         "email" : "smathur@gmail.com",
@@ -86,5 +88,5 @@
         "q2" : "What is your favorite vegetable?"
       }
     }
-  }
+  ]
 }
