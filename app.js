@@ -4,7 +4,9 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser'); // for html submit forms
 var logger = require('morgan');
-
+let dataFile = require('./databases/people-data.json');
+let stringData = JSON.stringify(dataFile);
+console.log(stringData);
 var indexRouter = require('./routes/index');
 var loginRouter = require('./routes/login');
 
