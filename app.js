@@ -16,7 +16,7 @@ app.set('view engine', 'pug');
 
 app.use(logger('dev'));
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+// app.use(express.urlencoded({ extended: false }));
 // configure the app to use bodyParser()
 app.use(bodyParser.urlencoded({
   extended: true
